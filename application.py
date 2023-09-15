@@ -15,8 +15,8 @@ pipe = pickle.load(open('LinearRegressionModel.pkl', 'rb'))
 st.title("Price Predictor")
 
 # Add UI elements for user input
-car_name = st.text_input("Car Name")
-car_company = st.text_input("Car Company")
+car_name = st.selectbox("Car Name")
+car_company = st.selectbox("Car Company")
 car_year = st.number_input("Launch Year", min_value=1980, max_value=2025, step=1)
 car_kms_driven = st.number_input("KM Driven", min_value=0, max_value=1000000, step=100)
 fuel_type = st.selectbox("Fuel Type", ['Petrol', 'Diesel', 'CNG', 'Electric'])
