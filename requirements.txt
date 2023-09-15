@@ -18,3 +18,4 @@ sklearn
 threadpoolctl
 Werkzeug
 matplotlib
+seaborn
